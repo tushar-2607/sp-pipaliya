@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { IconButton } from "@mui/material";
 import sunil from "../image/sunil.png";
-
+  
 const sections = [
   { id: "hero", label: "Home", icon: <Home size={18} /> },
   { id: "about", label: "About", icon: <User size={18} /> },
