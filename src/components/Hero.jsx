@@ -7,7 +7,7 @@ import sunil from '../assets/sunil.png';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center md:mb-0 pb-14 pt-20 overflow-hidden bg-[#0f172a]">
+    <section id="hero" className="relative min-h-screen flex items-center md:pb-0 pb-14 pt-20 overflow-hidden bg-[#0f172a]">
       {/* Background Glows */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px]" />
