@@ -7,14 +7,14 @@ import sunil from '../assets/sunil.png';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 sm:pb-24 overflow-hidden bg-[#0f172a]">
+    <section id="hero" className="relative min-h-screen flex items-center md:mb-0 pb-14 pt-20 overflow-hidden bg-[#0f172a]">
       {/* Background Glows */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]" />
       </div>
 
-      <div className="container md:mx-8 px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="container md:mx-8 !sm:pb-20 px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -112,7 +112,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative flex justify-center lg:justify-end"
+          className="relative flex justify-center lg:justify-end "
         >
           <div className="relative w-72 h-72 md:w-96 md:h-96">
             {/* Glowing Border with custom animation */}

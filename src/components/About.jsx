@@ -37,7 +37,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="pb-24 bg-slate-900/50 relative overflow-hidden"
+      className="pb-24 bg-slate-900/50 relative overflow-hidden "
     >
       <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/5 blur-[120px] -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/5 blur-[120px] -z-10" />
