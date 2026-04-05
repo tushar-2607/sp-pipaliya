@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Phone, Linkedin, Instagram, Mail } from 'lucide-react';
 import { IconButton, Tooltip } from '@mui/material';
 import Typewriter from 'typewriter-effect';
-import sunil from '../image/sunil.png';
+import sunil from '../assets/sunil.png';
 
 export default function Hero() {
   return (

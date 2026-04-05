@@ -12,7 +12,7 @@ import {
   Mail,
 } from "lucide-react";
 import { IconButton } from "@mui/material";
-import sunil from "../image/sunil.png";
+import sunil from "../assets/sunil.png";
   
 const sections = [
   { id: "hero", label: "Home", icon: <Home size={18} /> },
