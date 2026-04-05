@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif; */
+  --font-serif: "Poppins";
+  
+  --color-dark: #0f172a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+  
+  body {
+    @apply bg-dark text-slate-200 font-serif;
+    overflow-x: hidden;
+  }
+
+/* Scrollbar width ane style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; /* Horizontal scrollbar mate */
+}
+
+/* Scrollbar Track (Road) - Glassmorphism Effect */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* bg-white/5 */
+  backdrop-filter: blur(16px);           /* backdrop-blur-lg */
+  border-radius: 16px;                   /* rounded-2xl */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* border-white/10 */
+}
+
+/* Scrollbar Thumb (Moving part) - Gradient Effect */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #6366f1, #a855f7, #ec4899);
+  border-radius: 16px;
+  border: 2px solid transparent; /* Track sathe thodu space rakhva mate */
+  background-clip: content-box;
+}
+
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+    background-size: 200% 200%;
+    animation: gradient-move 5s ease infinite;
+  }
+
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_20px_rgba(99,102,241,0.3)];
+  }
+
+  .image-glow {
+    animation: glow-cycle 8s infinite;
+  }
+
+  @keyframes glow-cycle {
+    0% {
+        box-shadow: 0 0 20px #00d3f3, 0 0 40px #00d3f366;
+    }
+    25% {
+        box-shadow: 0 0 25px #ad46ff, 0 0 50px #ad46ff66;
+    }
+    50% {
+        box-shadow: 0 0 25px #fb64b6, 0 0 50px #fb64b666;
+    }
+    75% {
+        box-shadow: 0 0 25px #ad46ff, 0 0 50px #ad46ff66;
+    }
+    100% {
+        box-shadow: 0 0 20px #00d3f3, 0 0 40px #00d3f366;
+    }
+  }
+}
