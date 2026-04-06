@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Customer Service Representative",
     company: "William Hill Part-time",
-    period: "May 2026-Present. 11 mon",
+    period: "May 2026-Present. 11 mos",
     location: "Greater London, England, United Kingdom. On-site",
     responsibilities: [
       "Welcoming customers with a friendly face",
